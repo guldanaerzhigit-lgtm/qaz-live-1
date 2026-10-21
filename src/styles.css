@@ -113,3 +113,69 @@
  .mobileNav button{font-size:8px;gap:4px}
  .mobileNav button svg{width:18px;height:18px}
 }
+
+
+/* QAZ LAB: cyberpunk classified base, city and arena */
+.labPage{max-width:1120px!important}
+.labHero{position:relative;min-height:245px;overflow:hidden;display:flex;align-items:center;padding:clamp(22px,4vw,42px);border:1px solid #285057;border-radius:20px;background:radial-gradient(ellipse at 82% 25%,#1b5360 0,transparent 32%),radial-gradient(ellipse at 65% 100%,#382451 0,transparent 40%),linear-gradient(120deg,#0d1822,#111422 60%,#101b26);box-shadow:inset 0 1px #b9fff01a,0 18px 45px #0002}
+.labHeroGrid{position:absolute;inset:0;opacity:.15;background-image:linear-gradient(#69e7d4 1px,transparent 1px),linear-gradient(90deg,#69e7d4 1px,transparent 1px);background-size:30px 30px;mask-image:linear-gradient(90deg,transparent,#000)}
+.labHeroContent{position:relative;z-index:2;max-width:600px}
+.labKicker,.labHeroMeta,.labSectionHead>div>small{font:700 9px/1.4 ui-monospace,SFMono-Regular,monospace;letter-spacing:1.6px;color:#75e9d8}
+.labPulse,.labHeroMeta i{display:inline-block;width:7px;height:7px;margin-right:6px;border-radius:50%;background:#72efd9;box-shadow:0 0 12px #72efd9}
+.labHero h1{font-size:clamp(42px,7vw,72px);letter-spacing:-3px;line-height:1;margin:18px 0 10px;color:#f4f7ff;font-weight:900}
+.labHero h1 em{font-style:normal;color:#77e9d8;text-shadow:0 0 28px #56ddce55}
+.labHeroContent>p{color:#b5c5d6;font-size:clamp(12px,2vw,15px);margin:0 0 25px}
+.labHeroMeta{display:flex;flex-wrap:wrap;gap:15px;color:#8fa5b9;font-size:8px;letter-spacing:1px}
+.labHeroMeta span:first-child{color:#7be9d9}
+.labHeroOrb{position:absolute;right:8%;top:50%;transform:translateY(-50%);width:clamp(90px,17vw,170px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;font-size:clamp(32px,5vw,55px);font-weight:900;color:#8bf4e5;border:1px solid #74ead94f;background:radial-gradient(circle at 35% 28%,#67e5d522,#7e68ff09 55%,transparent 70%);box-shadow:0 0 40px #5ce5d41c,inset 0 0 32px #5ce5d41b}
+.labHeroOrb:before,.labHeroOrb:after{content:"";position:absolute;inset:-13%;border:1px solid #6ce5d42c;border-radius:50%;transform:rotate(-25deg) scaleY(.32)}
+.labHeroOrb:after{transform:rotate(55deg) scaleY(.32);border-color:#a08aff50}
+.labHeroOrb span{position:absolute;right:3%;bottom:8%;font:10px ui-monospace,monospace;color:#ad9aff}
+.labQuickStats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0 22px}
+.labQuickStats>div{padding:14px 16px;border:1px solid #283744;border-radius:12px;background:linear-gradient(135deg,#141e2a,#10151f)}
+.labQuickStats small,.labRoomPanel>small{display:block;font:700 8px ui-monospace,monospace;letter-spacing:1.2px;color:#8198ad;margin-bottom:7px}
+.labQuickStats b{font-size:22px;color:#edf7ff}.labQuickStats b i{font-size:10px;font-style:normal;color:#7ce9d9;margin-left:4px}
+.labTabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:5px;margin-bottom:26px;border:1px solid #25333f;border-radius:14px;background:#0e141d}
+.labTabs button{display:flex;align-items:center;justify-content:center;gap:8px;min-width:0;padding:12px 8px;border:1px solid transparent;border-radius:10px;background:transparent;color:#90a2b6;font-size:11px;cursor:pointer}
+.labTabs button>span{font-size:16px}.labTabs button.active{color:#8af2e2;background:linear-gradient(120deg,#1a393b,#211d37);border-color:#37645f;box-shadow:inset 0 1px #ffffff09}
+.labSectionHead{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin:4px 0 16px}
+.labSectionHead h2{margin:7px 0;font-size:clamp(21px,3vw,29px);letter-spacing:-.7px}
+.labSectionHead p{margin:0;color:#8fa0b4;font-size:12px;line-height:1.5}
+.labTag{display:inline-flex;align-items:center;white-space:nowrap;padding:6px 8px;border:1px solid #30464f;border-radius:6px;color:#82cfc5;background:#15242b;font:700 8px ui-monospace,monospace;letter-spacing:.7px}
+.labMissionGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.labMission{display:flex;flex-direction:column;min-width:0;padding:16px;border:1px solid #283744;border-radius:14px;background:linear-gradient(145deg,#141d29,#10151e);transition:transform .18s,border-color .18s}
+.labMission:hover{transform:translateY(-2px);border-color:#42645f}.labMission.complete{border-color:#2e665a;background:linear-gradient(145deg,#142822,#111a20)}
+.labMissionTop{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.labMissionIcon{display:grid;place-items:center;width:38px;height:38px;border:1px solid #3c4c66;border-radius:11px;background:#20283b;color:#a8a0ff;font-size:21px}
+.labMission h3{margin:15px 0 7px;font-size:14px}.labMission p{min-height:40px;margin:0;color:#93a2b6;font-size:11px;line-height:1.6}
+.labMissionBottom{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:17px;padding-top:12px;border-top:1px solid #27333f}
+.labMissionBottom>b{color:#83e9d9;font-size:11px}.labMissionBottom button{padding:7px 9px;border:1px solid #39524f;border-radius:7px;background:#172a2d;color:#a2f5e8;font-size:10px;cursor:pointer}
+.labDone{font-size:10px;color:#8be2b8}
+.labTerminal{margin-top:22px;overflow:hidden;border:1px solid #2a444a;border-radius:14px;background:#0b1117;box-shadow:0 12px 30px #0002}
+.labTerminalHead{display:flex;align-items:center;gap:12px;padding:12px 15px;border-bottom:1px solid #25343b;background:#141d25}
+.labTerminalHead>span{display:flex;gap:5px}.labTerminalHead>span i{width:7px;height:7px;border-radius:50%;background:#e9829d}.labTerminalHead>span i:nth-child(2){background:#e6c46e}.labTerminalHead>span i:nth-child(3){background:#70d7b0}
+.labTerminalHead b{font:700 9px ui-monospace,monospace;letter-spacing:1px;color:#a6bacb}.labTerminalHead small{margin-left:auto;color:#6f8d9c;font:8px ui-monospace,monospace}
+.labTerminalBody{padding:20px}.labTerminalBody>p{color:#a3b4c4;font:12px/1.7 ui-monospace,monospace}.labTerminalBody .labCodeLine{color:#75e9d8}.labCodeLine span{color:#d6e2f0}
+.labCodeForm,.labRoomForm{display:flex;gap:8px;margin-top:16px}.labCodeForm input,.labRoomForm input{flex:1;min-width:0;padding:12px;border:1px solid #2d414d;border-radius:8px;background:#101923;color:#dff8f2;font:11px ui-monospace,monospace;outline:none}.labCodeForm input:focus,.labRoomForm input:focus{border-color:#62cfc0}
+.labCodeForm button,.labRoomForm button,.labArenaSubmit{padding:12px 14px;border:1px solid #4b8279;border-radius:8px;background:linear-gradient(120deg,#23675f,#30445f);color:#e0fff8;font:700 9px ui-monospace,monospace;letter-spacing:.5px;cursor:pointer}
+.labTerminalResult{margin-top:12px;padding:10px;border:1px solid #6d4955;border-radius:7px;background:#291921;color:#ff9cb0;font:10px ui-monospace,monospace}
+.labTerminalResult.ok{border-color:#2c6858;background:#132821;color:#86edc4}.labHint{display:block;margin-top:13px;color:#5f7b8c;font:8px ui-monospace,monospace;letter-spacing:1px}
+.labCityGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.labCityCard{display:flex;flex-direction:column;align-items:stretch;text-align:left;overflow:hidden;padding:0 0 14px;border:1px solid #293946;border-radius:13px;background:#121a25;color:#e8f2fc;cursor:pointer}
+.labCityCard.selected{border-color:#6ad7c9;box-shadow:0 0 0 1px #6ad7c91c}.labCityVisual{position:relative;display:grid;place-items:center;height:112px;overflow:hidden;background:radial-gradient(ellipse at 50% 100%,#34616b,#1a2b3e 42%,#141927 75%)}
+.labCityCard:nth-child(2) .labCityVisual{background:radial-gradient(ellipse at 50% 100%,#63417d,#28223e 42%,#141927 75%)}
+.labCityCard:nth-child(3) .labCityVisual{background:radial-gradient(ellipse at 50% 100%,#4c536a,#24283a 42%,#141927 75%)}
+.labCityVisual:before{content:"";position:absolute;inset:35% 0 0;background:repeating-linear-gradient(90deg,transparent 0 18px,#86e6dc12 19px 20px),linear-gradient(0deg,#09111b,#263a4a);clip-path:polygon(0 25%,12% 25%,12% 0,24% 0,24% 45%,38% 45%,38% 10%,52% 10%,52% 35%,66% 35%,66% 5%,79% 5%,79% 30%,100% 30%,100% 100%,0 100%)}
+.labCityVisual>span{position:relative;z-index:1;font-size:37px;color:#8af0df;text-shadow:0 0 22px #5ee4d4}.labCityVisual>i{position:absolute;right:9px;top:9px;font:8px ui-monospace,monospace;color:#9eb6c5;font-style:normal}
+.labCityCard>b,.labCityCard>small,.labCityCard>em{margin-left:13px;margin-right:13px}.labCityCard>b{margin-top:13px;font-size:13px}.labCityCard>small{margin-top:6px;min-height:32px;color:#91a2b5;font-size:10px;line-height:1.5}.labCityCard>em{margin-top:12px;color:#77dccc;font:700 8px ui-monospace,monospace;font-style:normal}.labCityCard.locked{opacity:.8}
+.labRoomPanel{margin-top:15px;padding:18px;border:1px solid #2b3b49;border-radius:13px;background:linear-gradient(125deg,#151e2b,#11151f)}
+.labRoomPanel h3{margin:5px 0;font-size:19px}.labRoomPanel p{color:#91a2b5;font-size:11px;line-height:1.6}
+.labCityTrace{margin-top:12px;padding:10px;border-left:2px solid #71e3d1;background:#12212a;color:#9cebdd;font-size:11px;overflow-wrap:anywhere}
+.labArena{display:grid;grid-template-columns:170px minmax(0,1fr);gap:26px;align-items:center;padding:clamp(18px,3vw,30px);border:1px solid #343650;border-radius:17px;background:radial-gradient(ellipse at 0% 50%,#32245155,transparent 45%),linear-gradient(125deg,#151a29,#10151f)}
+.labArenaRing{position:relative;display:grid;place-items:center;align-content:center;gap:6px;width:145px;aspect-ratio:1;margin:auto;border:1px solid #7060a7;border-radius:50%;background:radial-gradient(circle,#39335b,#181b2a 68%);box-shadow:0 0 35px #7764d01c,inset 0 0 24px #7c68c82a;color:#c1aaff}
+.labArenaRing:before,.labArenaRing:after{content:"";position:absolute;inset:-10%;border:1px solid #7166a65c;border-radius:50%;transform:scaleY(.32) rotate(30deg)}.labArenaRing:after{transform:scaleY(.32) rotate(-30deg);border-color:#68d8c65c}.labArenaRing span{font-size:38px}.labArenaRing small{font:9px ui-monospace,monospace;letter-spacing:3px}
+.labArenaContent>small{font:8px ui-monospace,monospace;letter-spacing:1.4px;color:#b4a1ff}.labArenaContent h3{font-size:19px;line-height:1.4;margin:10px 0}.labArenaContent>p{color:#95a5b8;font-size:11px;line-height:1.6}
+.labAnswers{display:grid;gap:7px;margin:16px 0}.labAnswers button{display:flex;align-items:center;gap:12px;padding:11px;border:1px solid #303747;border-radius:9px;background:#121924;color:#92a5b9;text-align:left;font-size:11px;cursor:pointer}.labAnswers button.chosen{border-color:#8877dc;background:#27243c;color:#e5dcff}.labAnswers button>span{color:#e2eaf4}.labArenaSubmit:disabled{opacity:.4;cursor:not-allowed}
+.labFooterNote{display:flex;gap:12px;align-items:flex-start;margin-top:22px;padding:14px;border:1px solid #283843;border-radius:12px;background:#111a23}.labFooterNote>span{color:#78e6d5;font-size:22px}.labFooterNote b,.labFooterNote small{display:block}.labFooterNote b{color:#b4c8d6;font:700 9px ui-monospace,monospace;letter-spacing:1px}.labFooterNote small{margin-top:6px;color:#8193a6;font-size:10px;line-height:1.6}
+@media(max-width:760px){.labHero{min-height:210px;padding:22px 18px;border-radius:15px}.labHeroOrb{right:5%;top:24%;width:75px;opacity:.7}.labHero h1{font-size:46px;letter-spacing:-2px}.labHeroContent>p{max-width:250px;line-height:1.6}.labHeroMeta{max-width:260px;gap:8px 12px;font-size:7px}.labQuickStats{gap:6px;margin:10px 0 17px}.labQuickStats>div{padding:11px 9px}.labQuickStats small{font-size:7px;letter-spacing:.7px}.labQuickStats b{font-size:18px}.labTabs{gap:4px;padding:4px;margin-bottom:21px}.labTabs button{flex-direction:column;gap:4px;padding:9px 3px;font-size:9px}.labSectionHead{align-items:flex-start}.labSectionHead .labTag{display:none}.labMissionGrid,.labCityGrid{grid-template-columns:1fr}.labMission{padding:14px}.labMission p{min-height:0}.labCityVisual{height:125px}.labArena{grid-template-columns:1fr;gap:15px}.labArenaRing{width:110px}.labArenaContent h3{font-size:17px}.labCodeForm,.labRoomForm{flex-direction:column}.labCodeForm button,.labRoomForm button{min-height:42px}.labTerminalBody{padding:15px}.labHeroMeta span{white-space:nowrap}}
+@media(min-width:761px) and (max-width:1000px){.labMissionGrid,.labCityGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.labMissionGrid>.labMission:last-child,.labCityGrid>.labCityCard:last-child{grid-column:auto}}
