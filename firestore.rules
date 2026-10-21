@@ -89,7 +89,8 @@ service cloud.firestore {
   match /labRequests/{requestId} {
    allow create: if signedIn() && request.resource.data.uid==request.auth.uid && request.resource.data.status=='pending';
    allow read: if signedIn() && (resource.data.uid==request.auth.uid || admin());
-   allow update,delete: if admin();
+   allow update: if admin() && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status','reviewedAt','reviewedBy']) && request.resource.data.status in ['approved','revoked'] && request.resource.data.reviewedBy == request.auth.uid;
+   allow delete: if admin();
   }
   match /{document=**} {allow read,write: if false;}
  }
