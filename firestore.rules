@@ -86,6 +86,10 @@ service cloud.firestore {
     allow update,delete: if false;
    }
   }
+  match /worldDecorations/{decorationId} {
+   allow read: if signedIn();
+   allow create,update,delete: if admin();
+  }
   match /labRequests/{requestId} {
    allow create: if signedIn() && request.resource.data.uid==request.auth.uid && request.resource.data.status=='pending';
    allow read: if signedIn() && (resource.data.uid==request.auth.uid || admin());
