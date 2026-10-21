@@ -8,7 +8,6 @@ service cloud.firestore {
    allow create: if signedIn() && request.resource.data.uid==request.auth.uid && request.resource.data.text is string && request.resource.data.text.size()>0 && request.resource.data.text.size()<=500 && request.resource.data.likes==0 && request.resource.data.likedBy==[];
    allow update: if signedIn() && (
     (request.resource.data.diff(resource.data).affectedKeys().hasOnly(['likes','likedBy']) && request.resource.data.likedBy is list && request.resource.data.likes is int && request.resource.data.likes>=0 && ((request.resource.data.likedBy.hasAll(resource.data.likedBy) && request.resource.data.likedBy.size()==resource.data.likedBy.size()+1 && request.resource.data.likedBy.hasAny([request.auth.uid]) && !resource.data.likedBy.hasAny([request.auth.uid]) && request.resource.data.likes==resource.data.likes+1)||(resource.data.likedBy.hasAll(request.resource.data.likedBy) && resource.data.likedBy.size()==request.resource.data.likedBy.size()+1 && resource.data.likedBy.hasAny([request.auth.uid]) && !request.resource.data.likedBy.hasAny([request.auth.uid]) && request.resource.data.likes==resource.data.likes-1)))
-    || (request.resource.data.diff(resource.data).affectedKeys().hasOnly(['comments']) && request.resource.data.comments==resource.data.comments+1)
    );
    allow delete: if signedIn() && resource.data.uid==request.auth.uid;
    match /comments/{commentId} {
