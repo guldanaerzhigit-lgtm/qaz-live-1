@@ -219,3 +219,42 @@ footer .footerSignature{padding:0;border:0;background:transparent;color:inherit;
  .profileLabCard>p{margin-bottom:13px}
  .profileLabHeading h2{font-size:18px}
 }
+
+
+/* Centered, larger floating mobile navigation */
+@media(max-width:760px){
+ .mobileNav{
+  left:50%!important;
+  right:auto!important;
+  bottom:calc(8px + env(safe-area-inset-bottom))!important;
+  transform:translateX(-50%)!important;
+  width:max-content!important;
+  max-width:calc(100% - 18px)!important;
+  grid-template-columns:repeat(6,minmax(54px,76px))!important;
+  justify-content:center;
+  gap:5px!important;
+  padding:9px 10px calc(9px + env(safe-area-inset-bottom))!important;
+  border:1px solid rgba(126,225,216,.18)!important;
+  border-radius:22px!important;
+  background:linear-gradient(145deg,rgba(20,28,41,.97),rgba(8,13,22,.98))!important;
+  box-shadow:0 12px 38px rgba(0,0,0,.48),inset 0 1px rgba(255,255,255,.07),0 0 24px rgba(100,226,212,.06)!important;
+ }
+ .mobileNav button{
+  min-width:0!important;
+  min-height:62px!important;
+  gap:6px!important;
+  padding:8px 3px 7px!important;
+  border-radius:14px!important;
+  font-size:10px!important;
+ }
+ .mobileNav button svg{width:22px!important;height:22px!important}
+ .mobileNav button span{max-width:100%;font-size:10px;letter-spacing:-.15px}
+ .mobileNav button.selected:before{top:-10px!important;width:28px!important;left:calc(50% - 14px)!important;height:3px!important;border-radius:0 0 5px 5px!important}
+ .content{padding-bottom:calc(112px + env(safe-area-inset-bottom))!important}
+}
+@media(max-width:390px){
+ .mobileNav{grid-template-columns:repeat(6,minmax(46px,60px))!important;gap:3px!important;padding-left:7px!important;padding-right:7px!important}
+ .mobileNav button{min-height:58px!important;font-size:9px!important}
+ .mobileNav button svg{width:20px!important;height:20px!important}
+ .mobileNav button span{font-size:9px}
+}
