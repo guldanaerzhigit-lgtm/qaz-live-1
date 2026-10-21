@@ -41,3 +41,75 @@
 .messageCompose input{flex:1;min-width:0;background:#0b1118;border:1px solid #2a3442;border-radius:10px;color:#edf1f8;padding:12px;font-size:12px}
 .messageCompose .primary{padding:10px 14px}
 @media(max-width:760px){.feedFilters{gap:5px}.feedFilters button{padding:9px 8px;font-size:10px}.feedFilters .feedRefresh{margin-left:0}.chatLayout{grid-template-columns:1fr;min-height:0}.chatList{max-height:300px}.chatPanel{min-height:420px}.creator{flex-wrap:wrap}.creator>div{min-width:120px}.creator .outline{flex:1;justify-content:center}.profileinfo{flex-wrap:wrap;gap:12px}.profileinfo>div{min-width:0;overflow-wrap:anywhere}.page{padding-left:14px!important;padding-right:14px!important}.postactions{flex-wrap:wrap}.postactions button{min-height:40px}.searchbox input{min-width:0;width:100%}.messageList{max-height:55vh}}
+
+
+/* Premium mobile bottom navigation */
+@media(max-width:760px){
+ .mobileNav{
+  display:grid!important;
+  grid-template-columns:repeat(9,minmax(0,1fr));
+  align-items:stretch;
+  gap:2px;
+  position:fixed;
+  z-index:200;
+  left:0;right:0;bottom:0;
+  width:100%;
+  max-width:none;
+  transform:none;
+  box-sizing:border-box;
+  padding:8px 5px calc(8px + env(safe-area-inset-bottom));
+  border:0;
+  border-top:1px solid rgba(125,151,181,.2);
+  border-radius:20px 20px 0 0;
+  background:linear-gradient(180deg,rgba(19,25,36,.97),rgba(8,12,19,.99));
+  box-shadow:0 -12px 35px rgba(0,0,0,.34),inset 0 1px rgba(255,255,255,.035);
+  backdrop-filter:blur(22px);
+  -webkit-backdrop-filter:blur(22px);
+ }
+ .mobileNav button{
+  position:relative;
+  display:flex;
+  min-width:0;
+  min-height:54px;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  padding:6px 1px 5px;
+  border:1px solid transparent;
+  border-radius:13px;
+  background:transparent;
+  color:#8391a7;
+  font:500 9px/1.1 inherit;
+  cursor:pointer;
+  transition:color .18s ease,background .18s ease,transform .18s ease;
+  -webkit-tap-highlight-color:transparent;
+ }
+ .mobileNav button svg{width:20px;height:20px;stroke-width:1.8;flex:0 0 auto;transition:transform .18s ease}
+ .mobileNav button span{display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ .mobileNav button.selected{
+  color:#80f0df;
+  background:linear-gradient(145deg,rgba(91,220,202,.13),rgba(121,102,228,.10));
+  border-color:rgba(105,226,210,.16);
+  box-shadow:inset 0 1px rgba(255,255,255,.04);
+ }
+ .mobileNav button.selected:before{
+  content:"";
+  position:absolute;
+  top:-9px;
+  left:30%;
+  width:40%;
+  height:3px;
+  border-radius:0 0 4px 4px;
+  background:linear-gradient(90deg,#77eedb,#a78bfa);
+  box-shadow:0 0 12px rgba(119,238,219,.42);
+ }
+ .mobileNav button.selected svg{transform:translateY(-1px);stroke-width:2.2}
+ .content{padding-bottom:calc(92px + env(safe-area-inset-bottom))!important}
+ .mobileNav button:active{transform:scale(.94)}
+}
+@media(max-width:380px){
+ .mobileNav{padding-left:3px;padding-right:3px;gap:1px}
+ .mobileNav button{font-size:8px;gap:4px}
+ .mobileNav button svg{width:18px;height:18px}
+}
