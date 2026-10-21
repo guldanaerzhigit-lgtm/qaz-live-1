@@ -258,3 +258,22 @@ footer .footerSignature{padding:0;border:0;background:transparent;color:inherit;
  .mobileNav button svg{width:20px!important;height:20px!important}
  .mobileNav button span{font-size:9px}
 }
+
+
+/* QAZ LAB ecosystem modules */
+.labEcosystem{margin-top:30px;padding:20px;border:1px solid #293c4c;border-radius:18px;background:linear-gradient(145deg,#111b27,#10131d)}
+.labModuleTabs{display:flex;gap:7px;overflow-x:auto;padding:2px 1px 12px;margin-bottom:14px;scrollbar-width:thin}
+.labModuleTabs button{flex:0 0 auto;display:flex;align-items:center;gap:7px;padding:10px 12px;border:1px solid #2b3a4c;border-radius:10px;background:#151d29;color:#9aacc0;font-size:11px;cursor:pointer}
+.labModuleTabs button.active{border-color:#5b9e9c;background:#183336;color:#a4f4e6}
+.labModuleGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.labModuleCard{display:flex;flex-direction:column;align-items:flex-start;min-width:0;padding:16px;border:1px solid #2b3b4c;border-radius:14px;background:linear-gradient(145deg,#192535,#121720);text-align:left;color:#edf4ff;cursor:pointer}
+.labModuleCard>span{font-size:28px;margin-bottom:14px}.labModuleCard>small{color:#7fe0d4;font:700 8px ui-monospace,monospace;letter-spacing:1px}.labModuleCard>b{margin-top:7px;font-size:15px}.labModuleCard>p{min-height:42px;color:#92a4b8;font-size:11px;line-height:1.5}.labModuleCard>i{margin-top:auto;color:#8ee8db;font-size:11px;font-style:normal}
+.labFeaturePanel{margin-top:8px;padding:20px;border:1px solid #2c3d4e;border-radius:15px;background:#121923}.labFeaturePanel h2{margin:0 0 8px}.labFeaturePanel>p{color:#91a3b7;font-size:12px;line-height:1.6}
+.labLocationGrid,.labCollectGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:18px}
+.labLocation,.labCollectItem{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:14px;border:1px solid #2b3b4b;border-radius:12px;background:#17212d}.labLocation>span,.labCollectItem>span{font-size:28px}.labLocation>b,.labCollectItem>b{font-size:12px}.labLocation small,.labCollectItem small{color:#8fa2b5;font-size:10px}.labLocation em{color:#d5b8ff;font-size:10px;font-style:normal}.labLocation.locked{opacity:.7}
+.labFormLabel,.labAppLabel{display:flex;flex-direction:column;gap:7px;color:#9aacc0;font-size:11px;margin:14px 0}.labFormLabel input,.labRoomCreate input{width:100%;padding:12px;border:1px solid #334457;border-radius:10px;background:#0d141e;color:#f0f5fc}
+.labColorControls{display:flex;gap:12px}.labColorControls label{display:flex;align-items:center;gap:8px;color:#9aacc0;font-size:11px}.labColorControls input{width:42px;height:35px;border:0;background:transparent}
+.labThemePreview{display:flex;flex-direction:column;gap:7px;justify-content:center;min-height:110px;margin:16px 0;padding:20px;border-radius:13px;color:#10131b}.labThemePreview b{font-size:20px}.labThemePreview span{font:700 9px ui-monospace,monospace;letter-spacing:1px}
+.labMiniGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}.labMiniGrid>div{display:flex;flex-direction:column;align-items:flex-start;gap:9px;padding:15px;border:1px solid #2d3e50;border-radius:12px;background:#17212d}.labMiniGrid>div>span{font-size:25px}.labMiniGrid>div>b{font-size:13px}.labMiniGrid>div>p{color:#a3b2c2;font-size:12px;line-height:1.5}.labMiniGrid .outline{margin:3px 0}
+.labRoomCreate{display:flex;gap:9px;margin:16px 0}.labRoomRow,.labMissionRow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #263442}.labRoomRow>span,.labMissionRow>span{display:flex;flex-direction:column;gap:5px}.labRoomRow small,.labMissionRow small{color:#8ea1b5;font-size:10px}.labMissionRow i{color:#8de5d3;font-size:11px;font-style:normal}.labCollectItem.owned{border-color:#4c8079;background:#172c2e}.labCollectItem>i{color:#8ee8d8;font-size:10px;font-style:normal}.labSwatches{display:flex;gap:6px}.labSwatches i{width:24px;height:24px;border-radius:50%}
+@media(max-width:760px){.labEcosystem{padding:12px;margin-top:22px}.labModuleGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.labModuleCard{padding:12px}.labModuleCard>b{font-size:13px}.labLocationGrid,.labCollectGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.labFeaturePanel{padding:13px}.labMiniGrid{grid-template-columns:1fr}.labRoomCreate{flex-direction:column}.labColorControls{flex-wrap:wrap}}
