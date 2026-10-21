@@ -35,7 +35,8 @@ function App(){
  useEffect(()=>localStorage.setItem('qaz_achievements',JSON.stringify(achievements)),[achievements]);
  useEffect(()=>localStorage.setItem('qaz_following',JSON.stringify(following)),[following]);
  useEffect(()=>localStorage.setItem('qaz_saved',JSON.stringify(saved)),[saved]);
- useEffect(()=>localStorage.setItem('qaz_decor',JSON.stringify(decor)),[decor]);\n useEffect(()=>localStorage.setItem('qaz_decor_positions',JSON.stringify(decorPositions)),[decorPositions]);
+ useEffect(()=>localStorage.setItem('qaz_decor',JSON.stringify(decor)),[decor]);
+ useEffect(()=>localStorage.setItem('qaz_decor_positions',JSON.stringify(decorPositions)),[decorPositions]);
  useEffect(()=>localStorage.setItem('qaz_world',JSON.stringify(worldTitle)),[worldTitle]);
  useEffect(()=>localStorage.setItem('qaz_lab',JSON.stringify(lab)),[lab]);
  useEffect(()=>{if(toast){const t=setTimeout(()=>setToast(''),2400);return()=>clearTimeout(t)}},[toast]);
