@@ -1,0 +1,21 @@
+{
+  "id": "/",
+  "name": "QAZ LIVE — твой цифровой мир",
+  "short_name": "QAZ LIVE",
+  "description": "Социальная платформа, личные миры и достижения.",
+  "lang": "ru",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#090c11",
+  "theme_color": "#090c11",
+  "icons": [
+    {
+      "src": "/pwa-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
